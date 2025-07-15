@@ -159,7 +159,7 @@ public:
       if (std::fabs(x) < 1e-7)
         return T(1.0);
 
-      const auto pi = iplug::PI;
+      const auto pi = juce::MathConstants<T>::pi;
       return T(A * std::sin(pi * x) * std::sin(pi * x / A) / (pi * pi * x * x));
     };
 
